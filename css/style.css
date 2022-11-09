@@ -9,12 +9,18 @@
 .flex {
     display: flex;
 }
-.container-wdt-70 {
-    height: 100%;
-    width: 70%;
+.container-wdt-70,
+.container-wdt-60 {
+    height: 100%; 
     margin: 0 auto;
-    border: 2px dashed black;
 }
+.container-wdt-70 {
+    width: 70%;
+}
+.container-wdt-60 {
+    width: 60%;
+}
+
 
 
 /* Header */
@@ -30,22 +36,86 @@ header {
 .hdr-top-right {
     height: 50px;
     min-width: 30%;
-    border: 2px dashed black;
+    border: 1px dashed black;
 }
 .header-bottom {
     min-height: 500px;
 }
 .hdr-btm-top {
     height: 200px;
-    border: 2px dashed black;
+    border: 1px dashed black;
 }
 .hdr-btm-left {
     height: 300px;
     width: 35%;
-    border: 2px dashed black;
+    border: 1px dashed black;
 }
 .hdr-btm-right {
     height: 300px;
     width: 65%;
-    border: 2px dashed black;
+    border: 1px dashed black;
+}
+
+/* Main */
+.main {
+    padding: 60px 0;
+}
+.main-top,
+.main-bottom {
+    min-height: 800px;
+    border: 1px dashed black;
+}
+
+/* Main Top*/
+.title-main {
+    min-height: 80px;
+    border: 1px dashed black;
+}
+.imput-main {
+    min-height: 20px;
+    border: 1px dashed black;
+}
+
+/* Colum */
+.colum-top,
+.colum-bottom {
+    min-height: 200px;
+    gap: 15px;
+    margin: 15px 0;    
+}
+.col {
+    min-height: 400px;
+    width: calc(100% / 3);
+    border: 1px dashed black;
+}
+.colum-bottom {
+    min-height: 100px;
+    width: 100%;
+    border: 1px dashed black;
+}
+.header-col {
+    min-height: 20px;
+    width: 100%;
+    border: 1px dashed black;
+}
+/* Colum Bottom */
+.img-col {
+    min-height: 120px;
+    border: 1px dashed blue;
+}
+.heading {
+    padding: 20px 0;
+}
+
+
+/*Content*/
+.content {
+    min-height: 250px;
+    border: 1px dashed red;
+}
+.cont-left,
+.cont-right {
+    height: 250px;
+    width: 50%;
+    border: 1px dashed black;
 }
