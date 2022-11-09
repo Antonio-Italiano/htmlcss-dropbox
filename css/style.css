@@ -31,7 +31,9 @@ button {
     padding: 5px 10px;
     color: white;
 }
-
+h1 {
+    font-size: 35px;
+}
 
 
 /* Header */
@@ -100,18 +102,32 @@ li img {
 .main-top,
 .main-bottom {
     min-height: 800px;
-    border: 1px dashed black;
 }
 
 /* Main Top*/
 .title-main {
     min-height: 80px;
-    border: 1px dashed black;
 }
 .imput-main {
     min-height: 20px;
-    border: 1px dashed black;
+    margin-bottom: 40px;
 }
+.imput-main p{
+    font-size: 13px;
+}
+.on-imput,
+.imput{
+    height: 15px;
+    width: 15px;
+    border: 1px solid gray;    
+    border-radius: 50%;
+    margin-right: 5px;
+    
+}
+.on-imput {
+    border: 4px solid blue;
+}
+
 
 /* Colum */
 .colum-top,
