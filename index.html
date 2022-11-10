@@ -8,6 +8,9 @@
     <!-- Title -->
     <title>Dropbox Business</title>
     <!-- stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,18 +21,18 @@
         <div class="header-top flex">
             <div class="hdr-top-left">
                 <ul class="nav-bar flex">
-                    <li class="img"><img src="img/logo-small.png" alt="logo dropbox"></li>
-                    <li>Perchè Dropbox</li>
-                    <li>Funzioni</li>
-                    <li>Piani e prezzi</li>
+                    <li class="img"><a href="#"><img src="img/logo-small.png" alt="logo dropbox"></a></li>
+                    <li><a href="#">Perchè Dropbox</a></li>
+                    <li><a href="#">Funzioni</a></li>
+                    <li><a href="#">Piani e prezzi</a></li>
                 </ul>
             </div>
             <div class="hdr-top-right">
                 <ul class="nav-bar-right flex">
-                    <li>Supporto</li>
-                    <li>contatta l'ufficio vendite</li>
-                    <li>Accedi</li>
-                    <li><button>Inizia</button></li>
+                    <li><a href="#">Supporto</a></li>
+                    <li><a href="#">contatta l'ufficio vendite</a></li>
+                    <li><a href="#">Accedi</a></li>
+                    <li><a class="btn" href="#">Inizia</a></li>
                 </ul>
             </div>
         </div>
@@ -41,7 +44,7 @@
             <div class="hdr-btm flex">
                 <div class="hdr-btm-left">
                     <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
-                    <button>Inizia la tua prova gratuita</button>
+                    <a class="btn" href="#">Inizia la tua prova gratuita</a> 
                     <p>Annulla in qualsiasi momento</p>
                     <i class="fa-solid fa-arrow-down"></i>
                 </div>
@@ -89,7 +92,7 @@
                         <div class="col">
 
                             <!-- Content Col -->
-                            <h2>Professional</h2>
+                            <h3>Professional</h3>
                             <h6 class="price">&euro; 12.00</h6>
                             <div class="duration">/mese</div>
                             <div class="number-user flex">
@@ -104,7 +107,7 @@
                                 <i class="fa-solid fa-share-nodes"></i>
                                 <p>Funzioni di produttività premium e condivisione file semplice e sicura<p>
                             </div>
-                            <button>Prova gratis per 30 giorni</button>
+                            <a class="btn" href="#">Prova gratis per 30 giorni</a> 
                             <p>oppure <a href="#">acquista ora</a></p>
                             <hr>
                             <h5>Punti salienti del piano</h5>
@@ -123,7 +126,7 @@
                         <div class="col">
 
                             <!-- Content Col -->
-                            <h2>Advanced</h2>
+                            <h3>Advanced</h3>
                             <h6 class="price">&euro; 18.00</h6>
                             <div class="duration">/utente/mese</div>
                             <div class="number-user flex">
@@ -138,7 +141,7 @@
                                 <i class="fa-solid fa-share-nodes"></i>
                                 <p>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo teem<p>
                             </div>
-                            <button>Prova gratis per 30 giorni</button>
+                            <a class="btn" href="#">Prova gratis per 30 giorni</a>
                             <p>oppure <a href="#">acquista ora</a></p>
                             <hr>
                             <h5>Punti salienti del piano</h5>
@@ -169,7 +172,7 @@
                         <div class="col">
 
                             <!-- Content Col -->
-                            <h2>Enterprise</h2>
+                            <h3>Enterprise</h3>
                             <h6 class="price">contattaci</h6>
                             <div class="duration">-</div>
                             <div class="number-user flex">
@@ -184,7 +187,7 @@
                                 <i class="fa-solid fa-share-nodes"></i>
                                 <p>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala<p>
                             </div>
-                            <button>contattaci</button>
+                            <a class="btn" href="#">Contattaci</a>
                             <p>oppure <a href="#">acquista ora</a></p>
                             <hr>
                             <h5>Punti salienti del piano</h5>
@@ -205,15 +208,35 @@
 
                         </div>                           
                     </div>
-                    <div class="colum-bottom">
-                        <div class="header-col"></div>
+
+                    <!-- Colum width 100 -->
+                    <div class="header-col-100">
+                        <i class="fa-solid fa-building"></i>
+                        <p>Team</p>
+                    </div>
+                    <div class="col-w100 flex">
+                        <div class="col-w100-left">
+                            <h3>Enterprise</h3>
+                            <h6>Contatta l'ufficio vendite per i prezzi</h6>
+                            <p>Soluzioni personalizzatee supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala</p>
+                        </div>
+                        <div class="col-w100-right">
+                            <a class="btn" href="#">Contatta l'ufficio vendite</a>
+                        </div>                                             
+                        
                     </div>
                 </section>
                 
                 <!-- Content-->
                 <section class="content flex">
-                    <div class="cont-left"></div>
-                    <div class="cont-right"></div>
+                    <div class="cont-left">
+                        <img src="img/partner.png" alt="">
+                    </div>
+                    <div class="cont-right">
+                        <h4>Entra in contatto con un partner Dropbox</h4>
+                        <p>Trova un partner dropbox e HelloSing di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
+                        <a class="btn" href="#">Trova un partner</a>
+                    </div>
                 </section>
                 
             </div>
@@ -221,55 +244,55 @@
             <!-- Main Bottom -->
             <div class="main-bottom">
                 <div class="title-main">
-                    <h1></h1>
+                    <h1>Esegui più operazioni con Dropbox Business</h1>
                 </div>
 
                 <!-- Colum Bottom  -->
                 <section class="colum">
                     <div class="colum-bottom flex">
                         <div class="col">
-                            <div class="img-col"></div>
-                            <div class="heading">
-                                <h2></h2>
+                            <div class="img-col">
+                                <img src="img/business-feature-switching-tools.png" alt="">
                             </div>
-                            <p></p>
+                                <h4>Passa di meno da uno strumento all'altro</h4>
+                            <p>Porta a termine le attività quotidiane con un solo strumento. creaa, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
                         </div>
                         <div class="col">
-                            <div class="img-col"></div>
-                            <div class="heading">
-                                <h2></h2>
+                            <div class="img-col">
+                                <img src="img/business-feature-send-files-it.png" alt="">
                             </div>
-                            <p></p>
+                                <h4>Passa di meno da uno strumento all'altro</h4>
+                            <p>Porta a termine le attività quotidiane con un solo strumento. creaa, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
                         </div>
                         <div class="col">
-                            <div class="img-col"></div>
-                            <div class="heading">
-                                <h2></h2>
+                            <div class="img-col">
+                                <img src="img/business-feature-coordinate-it.png" alt="">
                             </div>
-                            <p></p>
+                                <h4>Passa di meno da uno strumento all'altro</h4>
+                            <p>Porta a termine le attività quotidiane con un solo strumento. creaa, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
                         </div>
                     </div>
                     <div class="colum-bottom flex">
                         <div class="col">
-                            <div class="img-col"></div>
-                            <div class="heading">
-                                <h2></h2>
+                            <div class="img-col">
+                                <img src="img/business-feature-integrations-it.png" alt="">
                             </div>
-                            <p></p>
+                                <h4>Passa di meno da uno strumento all'altro</h4>
+                            <p>Porta a termine le attività quotidiane con un solo strumento. creaa, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
                         </div>
                         <div class="col">
-                            <div class="img-col"></div>
-                            <div class="heading">
-                                <h2></h2>
+                            <div class="img-col">
+                                <img src="img/business-feature-multi-device.png" alt="">
                             </div>
-                            <p></p>
+                                <h4>Passa di meno da uno strumento all'altro</h4>
+                            <p>Porta a termine le attività quotidiane con un solo strumento. creaa, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
                         </div>
                         <div class="col">
-                            <div class="img-col"></div>
-                            <div class="heading">
-                                <h2></h2>
+                            <div class="img-col">
+                                <img src="img/business-feature-security.png" alt="">
                             </div>
-                            <p></p>
+                                <h4>Passa di meno da uno strumento all'altro</h4>
+                            <p>Porta a termine le attività quotidiane con un solo strumento. creaa, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
                         </div>
                     </div>
                 </section>
@@ -278,10 +301,12 @@
         <!-- Clients -->
         <section class="client">
             <div class="container-wdt-50">
-                <div class="title-main">
-                    <h1></h1>
+                <div class="title-client">
+                    <h1>Più di 500.000 team utilizzano Dropbox Business</h1>
                 </div>
-                <div class="imput-main"></div>
+                <div class="imput-main">
+                    <a href="">Scopri di più sui nostri clienti</a>
+                </div>
             </div>
     
             <!-- Client box -->

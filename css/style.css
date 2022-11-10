@@ -6,6 +6,10 @@
 }
 
 /* Generics */
+body {
+    font-family: 'open Sans', sans-serif;
+
+}
 .flex {
     display: flex;
 }
@@ -19,66 +23,80 @@
 .container-wdt-50 {
     width: 50%;
 }
-li{
-    list-style-type: none;
-    margin: 10px;
-    line-height: 25px;
-    font-size: 13px;    
-}
-button {
+.btn {
     background-color: blue;
     border: none;
     padding: 5px 10px;
     color: white;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
 }
 h1 {
-    font-size: 35px;
+    font-size: 27px;
 }
-
+img {
+    max-width: 100%;
+    display: block;
+}
+li {
+    list-style-type: none;
+}
 
 /* Header */
 header {
     background-color: #B4D0E7;
 }
+header a {
+    text-decoration: none;
+    color: black;
+    line-height: 15px;
+}
 .header-top {
     min-height: 50px;
     background-color: #fff;
     justify-content: space-between;
+    align-items: center;
+}
+.header-top img {
+    height: 22px;
+    padding-top: 5px;
 }
 .nav-bar-right {
     justify-content: flex-end;
 }
+header li {
+    list-style-type: none;
+    margin: 10px;
+    line-height: 25px;
+    font-size: 14px;    
+}
 .hdr-top-left,
 .hdr-top-right {
-    height: 50px;
+    max-height: 45px;
     min-width: 30%;
-}
-li img {
-    height: 19px;
-}
-.img {
-    line-height: 35px;
 }
 /* Header Bottom*/
 .header-bottom {
-    min-height: 485px;
+    min-height: 500px;
     margin-bottom: 50px;
 }
 .hdr-btm-top {
     margin: 40px 0;
 }
 .hdr-btm-top h1 {
-    font-size: 65px;
+    font-size: 60px;
 }
 .hdr-btm-left {
     height: 280px;
     width: 35%;
     position: relative;
+    font-size: 12px;
 }
-.hdr-btm-left button {
+.hdr-btm-left .btn {
     padding: 10px 10px;
     margin: 30px 0;
-    font-size: 15px;
+    font-size: 13px;
 }
 .hdr-btm-left .fa-solid {
     position: absolute;
@@ -96,6 +114,15 @@ li img {
 
 
 /* Main */
+main p {
+    font-size: 11px;
+}
+main .btn {
+    font-size: 11px;
+    padding: 5px 10px;
+    margin: 20px auto;
+    width: 100%;
+}
 .main {
     padding-top: 60px;
 }
@@ -111,6 +138,7 @@ li img {
 .imput-main {
     min-height: 20px;
     margin-bottom: 40px;
+    line-height: 15px;
 }
 .imput-main p{
     font-size: 13px;
@@ -132,28 +160,33 @@ li img {
 
 
 /* Colum */
-.colum-top,
-.colum-bottom {
+.colum-top {
     min-height: 200px;
-    gap: 15px;
+    gap: 35px;
+}
+.colum-top p {
+    font-size: 10px;
 }
 .col {
-    min-height: 400px;
+    min-height: 300px;
     width: calc(100% / 3);
     border: 1px solid lightgrey;
     border-top: 0;
     padding: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
-.colum-bottom {
+.col-w100 {
     min-height: 100px;
     width: 100%;
-    border: 1px dashed black;
+    border: 1px solid lightgrey;
+    padding: 20px;
+    border-top: 0;
 }
 .header-col-box {
-    gap: 15px;
+    gap: 35px;
 }
-.header-col {
+.header-col,
+.header-col-100 {
     min-height: 20px;
     width: calc(100% / 3);
     border: 1px solid lightgrey;
@@ -161,18 +194,25 @@ li img {
     justify-content: center;
     display: flex;
     padding: 5px;
+    line-height: 10px;
 }
-.header-col i {
+.col-w100-left {
+    width: 70%;
+}
+.col-w100-right {
+    width: 30%;
+    padding-left: 20px;
+}
+.header-col i,
+.header-col-100 i {
     margin-right: 5px;
-    font-size: 12px;
-}
-.header-col p {
     font-size: 12px;
 }
 .price {
     margin: 10px 0;
 }
 .duration {
+    font-size: 12px;
     margin-bottom: 30px;
     color: gray;
 }
@@ -180,17 +220,17 @@ li img {
 .cloud,
 .share {
     margin: 15px 0;
+    line-height: 12px;
 }
 .col i {
-    font-size: 12px;
+    font-size: 11px;
     margin-right: 4px;
 }
-.col p {
-    font-size: 12px;
-}
-.col button {
-    margin: 20px auto;
-    width: 100%;
+
+
+
+.col-w100 .btn {
+    margin: 0;
 }
 .col hr {
     margin: 30px 0;
@@ -205,26 +245,62 @@ li img {
     line-height: 15px;
     color: blue;
 }
+.col-w100 h3 {
+    margin-bottom: 20px;
+}
+.col-w100 h6 {
+    margin-bottom: 40px;
+}
+
+
+
 /* Colum Bottom */
+.colum-bottom {
+    gap: 30px;
+}
+.colum-bottom h4 {
+    margin-bottom: 17px;
+}
+.header-col-100{
+    width: 100%;
+}
+.colum-bottom .col {
+    border: 0;
+    padding: 0;
+    
+}
 .img-col {
     min-height: 120px;
-    border: 1px dashed blue;
 }
 .heading {
     padding: 20px 0;
 }
 
 
+
 /*Content*/
 .content {
     min-height: 250px;
-    border: 1px dashed red;
+    margin: 100px 0;
 }
-.cont-left,
 .cont-right {
-    height: 250px;
-    width: 50%;
-    border: 1px dashed black;
+    min-height: 250px;
+    width: 40%;
+    padding: 35px;
+}
+.cont-right .btn {
+    margin: 20px 0;
+    width: auto;
+    color: #000;
+    background-color: white;
+    border: 1px solid black;
+}
+h4 {
+    margin-bottom: 12px;
+}
+.cont-left {
+    width: 60%;
+    min-height: 250px;
 }
 
 /* Clients */
