@@ -42,7 +42,10 @@ img {
 li {
     list-style-type: none;
 }
-
+hr {
+    margin: 30px 0;
+    width: 20%;
+}
 /* Header */
 header {
     background-color: #B4D0E7;
@@ -232,10 +235,8 @@ main .btn {
 .col-w100 .btn {
     margin: 0;
 }
-.col hr {
-    margin: 30px 0;
-    width: 20%;
-}
+/* .col */
+
 .col li {
     line-height: 15px;
     margin: 15px 0;
@@ -304,9 +305,18 @@ h4 {
 }
 
 /* Clients */
+.title-client {
+    margin: 80px 0;
+    width: 75%;
+}
+.title-client h1 {
+    margin-bottom: 40px;
+}
+.title-client a {
+    font-size: 11px;
+}
 .client-box {
-    height: 160px;
-    border: 1px dashed black;
+    height: 445px;
     margin-top: 30px;
 }
 .box-left,
@@ -314,33 +324,80 @@ h4 {
 .box-right {
     height: 100%;
     width: calc(100% / 3);
-    border: 1px dashed black;
+}
+.box-center {
+    padding: 30px;
+    background-color: #F5F5F5;
+}
+.box-center img {
+    height: 60px;
+}
+.box-center p {
+    margin-bottom: 30px;
 }
 .minibox-left,
 .minibox-right {
     height: 100%;
     width: 50%;
-    /* border: 1px dashed black; */
 }
 .minibox-top,
 .minibox-bottom {
-    background-color: aquamarine;
+    position: relative;
     height: 50%;
-    border: 1px dashed black;
 }
+/* center client*/
+.box-left img,
+.box-right img {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Color Client */
+#designit{background-color: #A2D39B;}
+#florida{background-color: #0093CE;}
+#arizona{background-color: #61082B;}
+#topps{background-color: #FF1C1C;}
+#bicycle{background-color: #D5001F;}
+#planet{background-color: #0D2481;}
+#hearst{background-color: #B4D0E7;}
+#clear{background-color: #FFD830;}
+
 
 /* Trial Free */
-.trial-free {
-    height: 100px;
-    border: 1px dashed black;
+.trial-free-section {
+    background-color: #B4D0E7;
+    padding-top: 25px;
 }
-
+.trial-free {
+    padding: 50px 0;
+    height: 200px;
+}
+.trial-free .col-w100-left {
+    padding-right: 80px;
+    color: #61082B;
+}
+.trial-free .btn {
+    margin: 5px;
+    color: black;
+    background-color: white;
+}
 /* Frequent Questions */
 .questions {
-    height: 200px;
-    border: 1px dashed black;
+    margin-top: 80px;
+    
 }
-
+.questions hr {
+    width: 100%;
+}
+.question-sharp {
+    justify-content: space-between;
+}
+.question-sharp i {
+    margin-right: 25px;
+    font-size: 10px;
+}
 /* Footer */
 footer {
     background-color: #000;
