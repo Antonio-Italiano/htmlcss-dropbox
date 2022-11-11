@@ -8,7 +8,7 @@
 /* Generics */
 body {
     font-family: 'open Sans', sans-serif;
-
+    position: relative;
 }
 .flex {
     display: flex;
@@ -49,7 +49,13 @@ hr {
 }
 /* Header */
 header {
-    background-color: #B4D0E7;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    box-shadow: 0 0 5px grey;
 }
 header a {
     text-decoration: none;
@@ -82,38 +88,40 @@ header li {
     min-width: 30%;
 }
 /* Header Bottom*/
-.header-bottom {
-    min-height: 500px;
+.jumbotron {
+    background-color: #B4D0E7;
+    min-height: 540px;
     margin-bottom: 50px;
 }
-.hdr-btm-top {
-    margin: 40px 0;
+.jbt-btm-top {
+    padding: 40px 0;
 }
-.hdr-btm-top h1 {
+.jbt-btm-top h1 {
     font-size: 60px;
 }
-.hdr-btm-left {
+.jbt-btm-left {
     height: 280px;
     width: 35%;
     position: relative;
     font-size: 12px;
 }
-.hdr-btm-left .btn {
+.jbt-btm-left .btn {
+    width: auto;
     padding: 10px 10px;
     margin: 30px 0;
     font-size: 13px;
 }
-.hdr-btm-left .fa-solid {
+.jbt-btm-left .fa-solid {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 0;
     font-size: 40px;
 }
-.hdr-btm-right {
+.jbt-btm-right {
     height: 280px;
     width: 65%;
 }
-.hdr-btm-right img {
+.jbt-btm-right img {
     height: 350px;
 }
 
@@ -350,6 +358,7 @@ h4 {
 /* center client*/
 .box-left img,
 .box-right img {
+    filter: invert();
     width: 50%;
     position: absolute;
     top: 50%;
