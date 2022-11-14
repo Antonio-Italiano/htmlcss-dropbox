@@ -32,7 +32,7 @@ body {
     display: inline-block;
     text-align: center;
 }
-h1 {
+h2 {
     font-size: 27px;
 }
 img {
@@ -189,9 +189,12 @@ main .btn {
 }
 
 /* Colum */
+.card {
+    width: calc(100% / 3);
+}
 .colum-top {
     min-height: 200px;
-    gap: 35px;
+    gap: 40px;
 }
 .colum-top p {
     font-size: 10px;
@@ -209,7 +212,7 @@ main .btn {
 .header-col,
 .header-col-100 {
     min-height: 20px;
-    width: calc(100% / 3);
+    width: 100%;
     border: 1px solid lightgrey;
     text-align: center;
     justify-content: center;
@@ -250,7 +253,7 @@ main .btn {
 /* Col */
 .col {
     min-height: 300px;
-    width: calc(100% / 3);
+    width: 100%;
     border: 1px solid lightgrey;
     border-top: 0;
     padding: 20px;
@@ -327,7 +330,7 @@ h4 {
     margin: 80px 0;
     width: 75%;
 }
-.title-client h1 {
+.title-client h2 {
     margin-bottom: 40px;
 }
 .title-client a {
